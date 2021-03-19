@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* install normalize.css */
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#5376f1,#3858d1);
+}
+
+.header {
+    margin-bottom: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    /* align-items: flex-end; */
+}
+
+
+.TodoContainer{
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    background-color: WHITE;
+    height: 800px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.TodoHeader {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 2px solid rgb(187, 187, 187);
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 2% ;
+    height: 100%;
+    width: 95%;
+    margin: 2%;
+    /* border: 2px solid rgb(255, 0, 0); */
+    border-bottom:2px solid rgb(187, 187, 187); 
+
+}
+
+.formAndButton {
+    /* percent dictates how much space you want a nested item to consume of its parent container */
+    /* margin: 2%; */
+    height: 12%;
+    width: 98%;
+    /* border: 2px solid rgb(0, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.todoInput {
+    width: 80%;
+    /* height: ; */
+    
+}
+.submitButton {
+    height: 60%;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgb(236, 236, 236);
+    height: auto;
+    font-size: 20px;
+}
+
+.deleteTask{
+/* justify-items: flex-end; */
+color: red;
+cursor: pointer;
+}
+.date {
+    justify-self: flex-start;
+    align-self: flex-start;
 }
